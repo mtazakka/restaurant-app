@@ -8,6 +8,12 @@
     "ios": "expo start --ios",
     "web": "expo start --web"
   },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "prettier --write",
+      "eslint --fix"
+    ]
+  },
   "dependencies": {
     "expo": "~48.0.15",
     "expo-status-bar": "~1.4.4",
@@ -17,6 +23,11 @@
   "devDependencies": {
     "@babel/core": "^7.20.0",
     "@types/react": "~18.0.14",
+    "eslint": "^8.40.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.2",
+    "prettier": "^2.8.8",
     "typescript": "^4.9.4"
   },
   "private": true
